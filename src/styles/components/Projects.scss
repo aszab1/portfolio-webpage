@@ -1,14 +1,32 @@
-.galaxy-img {
-  width: 45%;
-  border: 10px black;
-}
-
-.travelistik-img, .legends-img {
-  width: 40%;
-}
 
 .snake-img {
   width: 60%;
 }
 
+.p4-card {
+  margin: 6em 1em 5em 1em;
+  background-color: red;
+}
 
+.travelistik-img, .galaxy-img, .legends-img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.image-box {
+  margin: 50px;
+  background-color: aqua;
+  padding: 20px;
+}
+
+
+.p4-stack {
+  background-color: pink;
+  padding: 50px;
+}
+
+.fa-xl {
+  padding: 20px 40px 0 20px;
+}
