@@ -1,8 +1,11 @@
 body {
   margin: 0;
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
+}
 
+main {
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #4a4a4a;
 }
 
 #root {
@@ -11,5 +14,5 @@ body {
   min-height: 100vh;
   min-width: 100%;
   margin: 0;
-  background-color: #f3efeb;
+  background-color: #fbfafa;
 }

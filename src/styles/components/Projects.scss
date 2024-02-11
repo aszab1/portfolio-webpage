@@ -4,29 +4,65 @@
 }
 
 .p4-card {
-  margin: 6em 1em 5em 1em;
-  background-color: red;
+  margin: 10em 5em 5em 5em;
+  background-color: #dfcfc299;
+  align-items: center;
 }
 
 .travelistik-img, .galaxy-img, .legends-img {
-  width: 50%;
-  height: 100%;
+  width: 500px;
+  height: 50%;
   object-fit: contain;
   padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .image-box {
-  margin: 50px;
-  background-color: aqua;
+  margin: 50px 50px 50px 0;
   padding: 20px;
+  background-color: #d2caca;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0,14);
 }
 
 
 .p4-stack {
-  background-color: pink;
+  background-color: #bcb4b4;
   padding: 50px;
+  width: 50%;
+  margin: 0 0 0 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .fa-xl {
   padding: 20px 40px 0 20px;
+  cursor: pointer;
 }
+
+.project4 {
+  background-color: #f3efeb;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,19);
+}
+
+.heading-p4, .project-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.js, .css, .html, .python {
+  width: 25px;
+  margin: 0 5px 20px 0;
+}
+
+.project-tooltip {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.skills-tooltip {
+  font-size: 10px;
+  color: #A89D9D;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+

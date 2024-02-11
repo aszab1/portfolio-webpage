@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom'
 export default function NavBar() {
   return (
     <>
-    <Navbar className='navbar' data-bs-theme='transparent'>
-            <div className="logo">
-            </div>
+    <Navbar className='navbar' fixed='top' expand='lg'>
             <Container fluid style={{ paddingLeft: 0 }}>
               <Nav className="me-auto">
                 <Nav.Link as={Link} to='/'>ADRIENN SZABO</Nav.Link>
+                </Nav>
+                <Nav className='nav-links'>
                 <Nav.Link as={Link} to='/'>Projects</Nav.Link>
                 <Nav.Link as={Link} to='/about'>About</Nav.Link>
                 <Nav.Link as={Link} to='/'>Contact</Nav.Link>

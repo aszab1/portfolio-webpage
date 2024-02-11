@@ -13,8 +13,7 @@ function App() {
         <NavBar />
         <main>
           {location.pathname === '/' && <Home />}
-          <Projects />
-
+          {location.pathname === '/' && <Projects />}
           <Outlet />
         </main>
       </div>
