@@ -15,7 +15,7 @@ export default function NavBar() {
                 <Nav className='nav-links'>
                 <Nav.Link as={Link} to='/'>Projects</Nav.Link>
                 <Nav.Link as={Link} to='/about'>About</Nav.Link>
-                <Nav.Link as={Link} to='/'>Contact</Nav.Link>
+                <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
                 </Nav>
                   
                 </Container>
