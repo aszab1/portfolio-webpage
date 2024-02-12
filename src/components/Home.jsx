@@ -2,6 +2,7 @@
 import { Box, Heading, Text, Image, Card, Stack, CardBody } from '@chakra-ui/react'
 import adrienn from '../assets/images/adrienn.jpg'
 
+
 export default function Home() {
 
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         </Box>
         <Stack>
         <CardBody className='home-cardBody'>
+        
         <Heading className='heading-text' size='md'>Hello!</Heading>
         <Text className='home-text'>I am Adrienn, a Junior Software Engineer based in London.</Text>
         </CardBody>

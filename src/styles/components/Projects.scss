@@ -3,14 +3,23 @@
   width: 60%;
 }
 
-.p4-card {
-  margin: 10em 5em 5em 5em;
+.p4-card, .p3-card , .p2-card, .p1-card {
+  margin: 10em 5em 20em 5em;
   background-color: #dfcfc299;
   align-items: center;
 }
 
+
 .travelistik-img, .galaxy-img, .legends-img {
   width: 500px;
+  height: 50%;
+  object-fit: contain;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.galaxy-img {
+  width: 450px;
   height: 50%;
   object-fit: contain;
   padding: 5px;
@@ -24,12 +33,26 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0,14);
 }
 
+.image-box2 {
+  margin: 50px 0 50px 50px;
+  padding: 20px;
+  background-color: #d2caca;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0,14);
+}
 
-.p4-stack {
+.p4-stack, .p2-stack {
   background-color: #bcb4b4;
   padding: 50px;
   width: 50%;
   margin: 0 0 0 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.p3-stack, .p1-stack {
+  background-color: #c0bbbb;;
+  padding: 50px;
+  width: 50%;
+  margin: 0 3em 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -38,20 +61,31 @@
   cursor: pointer;
 }
 
-.project4 {
+.project4, .project2, .project3, .project1 {
   background-color: #f3efeb;
   padding: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,19);
 }
 
-.heading-p4, .project-text {
+.heading, .project-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.js, .css, .html, .python {
+.js, .css, .html, .python, .django, .postgreSQL, .react, .sass, .bootstrap, .node {
   width: 25px;
   margin: 0 5px 20px 0;
 }
+
+.mongoDB {
+  width: 25px;
+  margin: 0 1px 20px 0;
+}
+
+.express {
+  width: 30px;
+  margin: 0 5px 20px 0;
+}
+
 
 .project-tooltip {
   font-size: 13px;
