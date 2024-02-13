@@ -51,6 +51,7 @@ const Form = () => {
           required
         />
         <input 
+          className='email'
           type='email'
           name='email'
           placeholder='Email *'
