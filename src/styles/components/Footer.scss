@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #d2caca;
+  color: #4a4a4a; 
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  height: 110px;
+}
+
+.footer-p {
+  text-align: center;
+  margin: 20px 40px 20px 20px;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-2xl {
+  margin: 15px;
+  cursor: pointer;
+}
