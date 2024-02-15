@@ -1,9 +1,15 @@
-import aboutme from '../assets/images/aboutme2.jpeg'
+import { useState, useEffect } from 'react'
+import aboutme from '../assets/images/aboutme.jpeg'
+import { motion} from 'framer-motion'
+import legends1 from '../assets/images/legends1.png'
+
+
 
 export default function About() {
+
+
   return (
     <>
-    <img className="about-img" src={aboutme} alt='About me'/>
     <div className='container'>
     <div className="about-container">
     <div className="about-text">
@@ -81,9 +87,25 @@ export default function About() {
   </div>
   </div>
   <div className='about-me'>
-  <h5 className='about-text'>About Me</h5>
+  {/* <motion.div
+  className="box"
+  style={{ width: '300px', height: '300px', backgroundImage: `url(${legends1})` }}
+  animate={{
+    scale: [1, 2, 2, 1, 1],
+    rotate: [0, 0, 180, 180, 0],
+    borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+  }}
+  transition={{
+    duration: 2,
+    ease: "easeInOut",
+    times: [0, 0.2, 0.5, 0.8, 1],
+    repeat: Infinity,
+    repeatDelay: 1
+  }}
+/> */}
+  <h5 className='things-text'>Things I like</h5>
   <br/>
-  <p >👩🏻‍💻  When I&apos;m not learning a new programming language,</p>
+  <p>👩🏻‍💻 When I&apos;m not learning a new programming language,</p>
   <p>🇪🇸  I&apos;m trying to master the Spanish language</p>
   <p>🌎  Keen Traveller</p>
   <p>🏋🏻‍♀️  Aspiring CrossFit Enthusiast</p>
@@ -91,6 +113,7 @@ export default function About() {
   <p>🌿  Nature Lover</p>
   <p>🌅  Sunset Chaser</p>
   </div>
+  
     </>
 
   )

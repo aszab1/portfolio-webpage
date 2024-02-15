@@ -1,14 +1,31 @@
 .home-img {
   width: 50%;
   border-radius: 155px;
+  margin: 70px 20px 20px 10px;
 }
 
 .home-card {
-  background-color: aqua;
   margin: 6em; 
 }
 
+.home-div {
+  height: 500px;
+  background: #6D2E46
+}
+.home-cardBody {
+  color:  rgb(222, 215, 209);
+}
+.stack-text {
+  text-align: center;
+  align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
 
+.project-text{
+  color: #6D2E46;
+}
 // .home-cardBody {
 //   display: flex;
 //   align-content: center;

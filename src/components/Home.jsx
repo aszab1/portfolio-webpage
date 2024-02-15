@@ -14,7 +14,7 @@ export default function Home() {
         <Box width={{ base: '100%', sm: '50%' }}>
           <Image className='home-img' src={adrienn} alt={`A picture of Adrienn Szabo`}></Image>
         </Box>
-        <Stack>
+        <Stack className='stack-text'>
         <CardBody className='home-cardBody'>
         
         <Heading className='heading-text' size='md'>Hello!</Heading>

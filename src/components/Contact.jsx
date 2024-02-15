@@ -5,7 +5,6 @@ import contact from '../assets/images/contact.png'
 export default function Contact (){
   return (
     <>
-  <img className="contact-img" src={contact} alt='image of a phone with a Contact Me text'/>
       <h4 className="contact-h4">Get in Touch</h4>
   <div className="contact-container">
     <div className="contact-text">
