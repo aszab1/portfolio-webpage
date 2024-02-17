@@ -28,6 +28,7 @@ export default function Projects(){
 
   return (
     <>
+    <div id='projects'></div>
     <div>
       <h1 className='project-text'>Projects</h1>
       <p className='project-text'>The following projects were key deliverables from the General Assembly Software Engineer Bootcamp, <br/>a twelve-week intensive course preparing students for tech careers.</p>

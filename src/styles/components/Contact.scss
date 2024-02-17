@@ -16,7 +16,8 @@ input, .textarea {
   margin-bottom: 15px; 
   padding: 10px;
   background-color: rgb(232, 222, 214, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.2); 
+  border: 1px solid #6D2E46;
+  // border: 1px solid rgba(0, 0, 0, 0.2); 
   border-radius: 2px; 
 }
 
@@ -32,6 +33,7 @@ input, .textarea {
 
 button.btn {
   background-color: #d2caca;
+  background-color: #9c667a;;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -40,6 +42,7 @@ button.btn {
 
 button.btn:hover {
   background-color: #c0bbbb;
+  background-color: #6D2E46;
 }
 
 .danger {

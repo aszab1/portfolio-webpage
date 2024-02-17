@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import aboutme from '../assets/images/aboutme.jpeg'
 import { motion} from 'framer-motion'
 import legends1 from '../assets/images/legends1.png'
 
