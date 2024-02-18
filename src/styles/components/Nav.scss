@@ -5,11 +5,21 @@
 
 a.nav-link {
   padding: 0px;
-  margin: 20px 0 10px 40px;
+  margin: 20px 0 10px 10px;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   color: #4a4a4a;
 }
 
 a.nav-link:hover {
   color: #6D2E46;
+  font-weight: 500;
+}
+
+a.link-name {
+  margin: 20px 0 10px 40px;
+}
+
+a.contact-link {
+  margin: 20px 40px 10px 10px;
 }

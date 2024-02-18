@@ -32,8 +32,7 @@ input, .textarea {
 }
 
 button.btn {
-  background-color: #d2caca;
-  background-color: #9c667a;;
+  background-color: #9c667a;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -41,8 +40,9 @@ button.btn {
 }
 
 button.btn:hover {
-  background-color: #c0bbbb;
-  background-color: #6D2E46;
+  color: rgb(232, 222, 214);
+  font-weight: 500;
+  background-color: #9c667a;
 }
 
 .danger {
@@ -52,7 +52,6 @@ button.btn:hover {
 
 .contact-h4 {
   margin-top: 7em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .contact-container {

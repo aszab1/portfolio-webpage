@@ -48,12 +48,12 @@ export default function NavBar() {
       <Navbar className='navbar' fixed='top' expand='lg'>
         <Container fluid style={{ paddingLeft: 0 }}>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/' onClick={scrollToTop}>ADRIENN SZABO</Nav.Link>
+            <Nav.Link className='link-name' as={Link} to='/' onClick={scrollToTop}>ADRIENN SZABO</Nav.Link>
           </Nav>
           <Nav className='nav-links'>
             <Nav.Link onClick={handleProjectClick}>Projects</Nav.Link>
             <Nav.Link as={Link} to='/about' onClick={scrollToTop}>About</Nav.Link>
-            <Nav.Link as={Link} to='/contact' onClick={scrollToTop}>Contact</Nav.Link>
+            <Nav.Link className='contact-link' as={Link} to='/contact' onClick={scrollToTop}>Contact</Nav.Link>
           </Nav>
 
         </Container>

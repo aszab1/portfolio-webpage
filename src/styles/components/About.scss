@@ -1,4 +1,9 @@
 
+div.container {
+  margin: 5em;
+  display: flex;
+  align-items: start;
+}
 
 .about-container {
   display: flex;
@@ -6,6 +11,7 @@
   text-align: center;
   gap: 50px;
   margin-top: 8em;
+  
   // margin-left: 300px;
 }
 
@@ -64,29 +70,61 @@
 
 .skills-title {
   justify-content: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .skills-p {
   font-size: 12px;
 }
 
-div.container {
-  display: flex;
-  margin: 20px 80px 0 150px;
-  align-items: start;
-
-}
 
 .about-me {
   text-align: start;
   margin: 5em;
+  margin-left: 5em;
+  width: 100%;
 }
 
 .things-text{
-  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
   text-align: start;
   align-items: start;
-  padding-left: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+
+.things-container {
+  display: flex;
+  align-items: start;
+  text-align: center;
+  gap: 50px;
+  margin-bottom: 3em;
+}
+.things-card {
+  margin-left: 5em;
+  margin-right: 5em;
+  display: flex;
+width: 50%;
+}
+
+
+
+.sunset-img {
+  width: 60%;
+  justify-content: center;
+  height: auto;
+  margin: 2em;
+  border-radius: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.things-card, .about-img {
+  flex: 1; 
+}
+
+.image-section {
+  width: 100%;
+  margin-right: 5em;
 }
