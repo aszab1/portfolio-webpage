@@ -27,7 +27,7 @@
   padding: 5px;
 }
 
-.image-box {
+.image-box, .image-box3 {
   margin: 50px 50px 50px 0;
   padding: 20px;
   background-color: #d2caca;
@@ -66,7 +66,6 @@
 .project4, .project2, .project3, .project1 {
   background-color: #f3efeb;
   padding: 40px;
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,19);
 }
 
 
@@ -107,14 +106,14 @@
   margin-bottom: 7em;
 }
 
-@media (max-width: 768px) {
-  .p1-card {
-    flex-direction: column;
-  }
-  .image-box1, .p1-stack {
-    width: 100%;
-  }
-}
+// @media (max-width: 768px) {
+//   .p1-card {
+//     flex-direction: column;
+//   }
+//   .image-box1, .p1-stack {
+//     width: 100%;
+//   }
+// }
 
 
 .image-box1 {
@@ -142,3 +141,166 @@
   margin: 2em 2em 2em 0;
   
 }
+
+@media only screen and (max-width: 1640px) {
+  .p4-stack, .p2-stack{
+    margin: 2em 0 2em 2em;
+    padding: 35px;
+  }
+
+  .p3-stack, .p1-stack {
+    margin: 2em 2em 2em 0;
+    padding: 35px;
+  }
+
+  .p4-card, .p3-card, .p2-card, .p1-card {
+    margin: 5em 5em 10em 5em;
+  }
+
+  .travelistik-img, .legends-img, .snake-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .galaxy-img {
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+  }
+  .project4, .project3, .project2, .project1 {
+    padding: 20px;
+  }
+  .heading {
+    margin-top: 1em;
+  }
+
+  .project-text{
+    font-size: 33px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .p4-card, .p3-card, .p2-card, .p1-card{
+    margin: 5em 1em 10em 1em;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .p4-card, .p3-card, .p2-card, .p1-card{
+    margin: 5em 0 10em 0;
+  }
+
+  .p4-stack, .p2-stack{
+    width: 100%;
+    margin: 1em 0 1em 1em;
+    padding: 30px;
+  }
+  .p3-stack {
+    width: 100%;
+    margin: 1em 1em 1em 0;
+    padding: 30px;
+  }
+  .p1-stack {
+    margin: 1em 1em 1em 0;
+    padding: 30px;
+  }
+
+
+  .image-box, .image-box3 {
+    width: 100%;
+    margin: 1em 1em 1em 0;
+    height: auto;
+  }
+
+  .image-box1, .image-box2 {
+    width: 100%;
+    margin: 1em 0 1em 1em;
+    height: auto;
+  }
+  .galaxy-img {
+    width: 70%;
+  }
+}
+
+
+@media only screen and (max-width: 810px) {
+  .p4-card, .p2-card {
+    flex-direction: column;
+    margin: 5em 0 8em 0;
+  }
+
+  .p3-card, .p1-card {
+    flex-direction: column-reverse;
+    margin: 5em 0 8em 0;
+  }
+
+  .p4-stack, .p3-stack, .p2-stack, .p1-stack {
+    width: 100%;
+    margin: 0;
+  }
+
+  .image-box, .image-box1, .image-box2, .image-box3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .travelistik-img, .legends-img, .galaxy-img, .snake-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .p4-card {
+    flex-direction: column;
+    margin: 5em 0 5em 0;
+  }
+
+  .p2-card {
+    flex-direction: column;
+    margin: 10em 0 5em 0;
+  }
+
+  .p3-card, .p1-card {
+    flex-direction: column-reverse;
+    margin: 10em 0 5em 0;
+  }
+
+  .p4-stack, .p3-stack, .p2-stack, .p1-stack {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .image-box, .image-box1, .image-box2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .travelistik-img, .legends-img, .snake-img, .galaxy-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+
+  .project4, .project3, .project2, .project1 {
+    padding: 10px;
+  }
+
+  .heading {
+    margin-top: 10px;
+    font-size: 21px;
+  }
+
+  .project-text {
+    font-size: 25px;
+    }
+}
+
