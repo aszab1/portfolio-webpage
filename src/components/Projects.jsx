@@ -31,7 +31,7 @@ export default function Projects(){
     <div id='projects'></div>
     <div>
       <h1 className='project-text'>Projects</h1>
-      <p className='p.project-text'>The following projects were key deliverables from the General Assembly Software Engineer Bootcamp, <br/>a twelve-week intensive course preparing students for tech careers.</p>
+      <p className='p-project-text'>The following projects were key deliverables from the General Assembly Software Engineer Bootcamp, <br/>a twelve-week intensive course preparing students for tech careers.</p>
     </div>
 
   

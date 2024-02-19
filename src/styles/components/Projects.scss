@@ -256,7 +256,7 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 510px) {
   .p4-card {
     flex-direction: column;
     margin: 5em 0 5em 0;
@@ -275,7 +275,7 @@
   .p4-stack, .p3-stack, .p2-stack, .p1-stack {
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
   }
 
   .image-box, .image-box1, .image-box2 {
@@ -302,5 +302,8 @@
   .project-text {
     font-size: 25px;
     }
+  .p-project-text {
+    margin: 10px;
+  }  
 }
 
