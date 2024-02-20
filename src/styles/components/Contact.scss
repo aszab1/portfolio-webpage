@@ -87,14 +87,12 @@ button.btn:hover {
     .contact-container {
       display: flex;
       flex-direction: column;
-      margin: 1em 10em 2em 10em;
+      margin: auto;
       width: fit-content;
-    }
-
-    .contact-container {
       gap: 0;
       align-items: center;
     }
+
 
     .contact-h4 {
       text-align: center;
@@ -115,7 +113,9 @@ button.btn:hover {
     margin: 0;
     width: 100%;
   }
-
+  .contact-text{
+    margin-top: 1em;
+  }
   form{
     width: 400px;
   }
@@ -124,5 +124,9 @@ button.btn:hover {
 @media only screen and (max-width: 450px) {
   form{
     width: 300px;
+  }
+
+  .contact-text{
+    margin: 1em;
   }
 }

@@ -71,8 +71,8 @@ export default function NavBar() {
           <MenuButton as={IconButton} aria-label='Options' icon={<HamburgerIcon />} />
           <MenuList className='menu-list'>
             <MenuItem className='projects-menu' onClick={handleProjectClick}>Projects</MenuItem>
-            <MenuItem as={Link} to='/about' onClick={scrollToTop}>About</MenuItem>
-            <MenuItem as={Link} to='/contact' onClick={scrollToTop}>Contact</MenuItem>
+            <MenuItem className='menus' as={Link} to='/about' onClick={scrollToTop}>About</MenuItem>
+            <MenuItem className='menus' as={Link} to='/contact' onClick={scrollToTop}>Contact</MenuItem>
           </MenuList>
         </Menu>
       ) : (

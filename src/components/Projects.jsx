@@ -40,7 +40,7 @@ export default function Projects(){
             direction={{ base: 'column', lg: 'row' }}
             overflow='hidden'
             variant='outline'>
-        <Stack className='p4-stack'>
+        <Stack className='p4-stack' height="100%">
           <CardBody className='project4'>
             <Heading className='heading' size='md'>Travelistik</Heading>
             <p className='p-p4'>Solo Project | 10 days</p>
@@ -74,7 +74,7 @@ export default function Projects(){
             </Tooltip>
           </CardBody>
         </Stack>
-        <Box className='image-box' width={{ base: '100%', sm: '50%' }}>
+        <Box className='image-box' width={{ base: '100%', sm: '50%' }} height="100%">
         <AnimatePresence>
             {inView4 && (
               <>
@@ -105,7 +105,7 @@ export default function Projects(){
             overflow='hidden'
             variant='outline'>
         <Box width={{ base: '100%', sm: '50%' }}
-        className='image-box2'>
+        className='image-box2' height="100%">
         <AnimatePresence>
             {inView3 && (
               <>
@@ -127,7 +127,7 @@ export default function Projects(){
             )}
             </AnimatePresence>
         </Box>
-        <Stack className='p3-stack'>
+        <Stack className='p3-stack' height="100%">
           <CardBody className='project3'>
             <Heading className='heading' size='md'>Legends of the Turf</Heading>
             <p className='p-p3'>Group Project | 9 days</p>
@@ -169,7 +169,7 @@ export default function Projects(){
             direction={{ base: 'column', lg: 'row' }}
             overflow='hidden'
             variant='outline'>
-        <Stack className='p2-stack'>
+        <Stack className='p2-stack' height="100%">
           <CardBody className='project2' >
             <Heading className='heading' size='md'>GalacticScope</Heading>
             <p className='p-p2'>Paired Project | 2 days</p>
@@ -195,7 +195,7 @@ export default function Projects(){
           </CardBody>
         </Stack>
         <Box width={{ base: '100%', sm: '50%' }}
-        className='image-box3'>
+        className='image-box3' height="100%">
         <AnimatePresence>
             {inView2 && (
               <>
@@ -227,7 +227,7 @@ export default function Projects(){
             variant='outline'>
         
         <Box width={{ base: '100%', sm: '50%' }}
-        className='image-box2'>
+        className='image-box2' height="100%">
         <AnimatePresence>
             {inView1 && (
               <>
@@ -243,7 +243,7 @@ export default function Projects(){
           </AnimatePresence>
           
         </Box>
-        <Stack className='p1-stack'>
+        <Stack className='p1-stack' height="100%">
           <CardBody className='project1'>
             <Heading className='heading' size='md'>Forest Snake</Heading>
             <p className='p-p4'>Solo Project | 7 days</p>

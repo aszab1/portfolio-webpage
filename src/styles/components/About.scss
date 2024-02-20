@@ -1,6 +1,6 @@
 
 div.container {
-  margin: 5em;
+  margin: 5em 5em 5em 15em;
   display: flex;
   align-items: start;
 }
@@ -25,16 +25,20 @@ div.container {
   margin-top: 8em;
   margin-right: 8em;
     padding: 20px;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     text-align: start;
-    align-content: center;
-    flex-wrap: wrap;
+    // align-content: center;
+    // flex-wrap: wrap;
 }
 
-.js1, .css1, .html1, .python1, .django1, .postgreSQL1, .react1, .sass1, .bootstrap1, .node1, .heroku,  .git {
+.js1, .css1, .html1, .python1, .django1, .postgreSQL1, .react1, .sass1, .bootstrap1, .node1, .heroku, .git, .chakra, .npm, .netlify{
   width: 25px;
   margin: 0 5px 20px 0;
+}
+
+.postgreSQL1{
+  width: 24px;
 }
 
 .mongoDB1 {
@@ -44,7 +48,7 @@ div.container {
 
 .express1, .npm {
   width: 30px;
-  margin: 0 5px 20px 0;
+  margin: 0 4px 17px 0;
 }
 
 .skills {
@@ -98,7 +102,7 @@ div.container {
   align-items: start;
   text-align: center;
   gap: 50px;
-  margin-bottom: 3em;
+  margin: 5em 5em 5em 11em;
 }
 .things-card {
   margin-left: 5em;
@@ -126,5 +130,118 @@ width: 50%;
 
 .image-section {
   width: 100%;
-  margin-right: 5em;
+  margin: 1em 8em 3em 0;
+}
+
+@media only screen and (max-width: 1500px) {
+  div.container {
+    margin: 5em;
+  }
+
+  .image-section {
+    margin-right: 1em 6em 0 0;
+  }
+  .sunset-img {
+    width: 65%;
+    padding-top: 30px; 
+  }
+  .about-container{
+    gap: 0;
+    width: fit-content;
+  }
+
+.things-container{
+  margin: 2em;
+}
+}
+
+@media only screen and (max-width: 1400px) {
+  div.container {
+    margin: 5em 0 5em 2em;
+  }
+  .about-text{
+    margin-right: 1em;
+    margin-top: 6em;
+    max-width: 400px;
+  }
+  .about-container{
+    gap: 50px;
+    }
+      .about-me {
+    margin-left: 2em;
+    
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-container{
+    gap: 0;
+    margin-top: 6em;
+    }
+  .sunset-img {
+    width: 100%;
+    padding-top: 50px; 
+    }  
+}
+
+@media only screen and (max-width: 993px) {
+  .about-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    
+  }
+  .about-text, .skills {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .about-text{
+  max-width: fit-content;
+  }
+  .things-container {
+    gap: 0;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  div.container {
+  width: 100%;
+  margin: 0 auto;
+  }
+.single-skill{
+  margin: 5px;
+  padding: 5px;
+}
+.about-text {
+  padding-top: 3em;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .things-container{
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .image-section {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .sunset-img {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
 }
