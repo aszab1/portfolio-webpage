@@ -58,11 +58,7 @@ export default function NavBar() {
       scrollToTop()
     }
   }
-  const handleMenuItemClick = (path) => {
-    navigate(path)
-    scrollToTop()
-  }
-  
+
   return (
     <>
       <Navbar className='navbar' fixed='top' expand='lg'>
@@ -75,8 +71,8 @@ export default function NavBar() {
           <MenuButton as={IconButton} aria-label='Options' icon={<HamburgerIcon />} />
           <MenuList className='menu-list'>
             <MenuItem className='projects-menu' onClick={handleProjectClick}>Projects</MenuItem>
-            <MenuItem className='menus' onClick={() => handleMenuItemClick('/about')}>About</MenuItem>
-              <MenuItem className='menus' onClick={() => handleMenuItemClick('/contact')}>Contact</MenuItem>
+            <MenuItem className='menus' as={Link} to='/about' onClick={scrollToTop}>About</MenuItem>
+            <MenuItem className='menus' as={Link} to='/contact' onClick={scrollToTop}>Contact</MenuItem>
           </MenuList>
         </Menu>
       ) : (
