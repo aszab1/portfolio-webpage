@@ -35,6 +35,7 @@ a.contact-link {
 .menus:hover{
   color: #6D2E46;
   font-weight: 600;
+  border-color: none;
 }
 
 .projects-menu{
@@ -49,6 +50,10 @@ a.contact-link {
   font-weight: 600;
 }
 
+.menus {
+  margin-top: 10px;
+  background-color: #d2caca;
+}
 
 .chakra-button.chakra-menu__menu-button.css-p7mkev{
   background-color: rgb(232, 222, 214);
@@ -70,11 +75,6 @@ a.contact-link {
   a.nav-link {
     margin: 20px 0 10px 10px;
     font-size: 18px;
-  }
-
-  .chakra-button.chakra-menu__menu-button.css-p7mkev{
-    width: 35px;
-    height: 35px;
   }
 }
 
