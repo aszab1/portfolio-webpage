@@ -94,6 +94,13 @@ const ProjectCard = ({ project }) => {
     return () => clearInterval(timer);
   }, [project.images.length]);
 
+  useEffect(() => {
+    project.images.forEach((image) => {
+      const img = new Image();
+      img.src = image; 
+    });
+  }, [project.images])
+
   return (
     <Card className='project-card'
       direction={{ base: 'column', md: 'row' }}
@@ -152,7 +159,10 @@ const ProjectCard = ({ project }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 1 }}
+                transition={{
+                  duration: 1.5, 
+                  ease: 'easeInOut', 
+                }}
                 className="project-img"
                 style={{
                   position: 'absolute',
