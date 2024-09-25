@@ -1,17 +1,22 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
+  padding: 0
 }
 
 
 main {
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.5px;
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   color: #4a4a4a;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
   font-weight: 500;
   
 }
@@ -29,7 +34,7 @@ main {
   background-color: #fbfafa;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
   main {
     font-size: 14px;
   }

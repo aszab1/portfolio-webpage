@@ -2,13 +2,15 @@ import { Box, Heading, Text, Image, Card, Stack, CardBody} from '@chakra-ui/reac
 import { motion, AnimatePresence } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useInView } from 'react-intersection-observer'
-import travelistik1 from '../assets/images/travelistik1.png'
-import travelistik2 from '../assets/images/travelistik2.png'
-import legends1 from '../assets/images/legends1.png'
-import legends2 from '../assets/images/legends2.png'
-import galaxy1 from '../assets/images/galaxy1.png'
-import galaxy2 from '../assets/images/galaxy2.png'
-import snake from '../assets/images/snake.png'
+// Import project images
+import travelistik1 from '../assets/images/travelistik1.jpg'
+import travelistik2 from '../assets/images/travelistik2.jpg'
+import legends1 from '../assets/images/legends1.jpg'
+import legends2 from '../assets/images/legends2.jpg'
+import galaxy1 from '../assets/images/galaxy1.jpg'
+import galaxy2 from '../assets/images/galaxy2.jpg'
+import snake from '../assets/images/snake.jpg'
+
 
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
