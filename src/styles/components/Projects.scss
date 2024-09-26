@@ -2,6 +2,7 @@
 /* Carousel styles */
 .carousel {
   width: 90%; 
+  height: 500px;
   margin: 2em auto;
   position: relative;
   overflow: hidden; 
@@ -60,16 +61,9 @@ p.chakra-text.project-description {
 }
 
 .project-cardbody{
+  height: 420px;
   background-color: #f3efeb;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
-
-.project-card {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .image-box {
@@ -123,7 +117,7 @@ p.chakra-text.project-description {
   margin: 0 6px 40px 0;
 }
 
-.node, .html, .cssnpm{
+.node, .html, .css{
   width: 18px;
   margin: 0 6px 44px 0;
 }
@@ -143,15 +137,28 @@ p.chakra-text.project-description {
   font-weight: bold;
   cursor: pointer;
 }
+@media only screen and (max-width: 1180px) {
+  .carousel{
+    height: 600px;
+  }
+  .heading{
+    margin-top: 1em;
+  }
+  .project-cardbody{
+    height: 500px;
+  }
+}
 
 @media only screen and (max-width: 968px){
   .carousel{
     width: 95%;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 2em;
   }
   .project-cardbody{
     flex-direction: column-reverse;
+    height: 600px;
   }
   div.image-box{
     width: 70%;
