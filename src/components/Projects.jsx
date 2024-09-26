@@ -16,7 +16,6 @@ import galaxy1 from '../assets/images/galaxy1.jpg'
 import galaxy2 from '../assets/images/galaxy2.jpg'
 import snake from '../assets/images/snake.jpg'
 
-const MotionImage = motion.img
 
 const SkillIcon = ({ skill }) => {
   switch (skill) {
@@ -86,6 +85,7 @@ const SkillIcon = ({ skill }) => {
 
 const ProjectCard = ({ project }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [isImageLoaded, setIsImageLoaded] = useState(false)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -96,31 +96,13 @@ const ProjectCard = ({ project }) => {
 
 
   useEffect(() => {
-    const preloadImages = project.images.map((image) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image()
-        img.src = image
-        img.onload = resolve
-        img.onerror = reject
-      })
-    })
-
-    Promise.all(preloadImages).then(() => {
-      console.log("All images preloaded")
-    }).catch((error) => console.error("Error preloading images", error))
-  }, [project.images])
-
-  const [isImageLoaded, setIsImageLoaded] = useState(false)
-
-
-  useEffect(() => {
     const img = new Image()
     img.src = project.images[currentImageIndex]
     img.onload = () => setIsImageLoaded(true)
     img.onerror = () => setIsImageLoaded(false)
   }, [currentImageIndex, project.images])
 
-  
+
   return (
     <Card className='project-card'
       direction={{ base: 'column', md: 'row' }}
@@ -173,18 +155,17 @@ const ProjectCard = ({ project }) => {
           >
             <AnimatePresence mode='wait'>
               {isImageLoaded && (
-                <MotionImage
-                  layout
-                  key={currentImageIndex}
+                <motion.div
+                key={currentImageIndex}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.5, ease: 'easeInOut' }}
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              >
+                <img
                   src={project.images[currentImageIndex]}
                   alt={project.title}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{
-                    duration: 1.5,
-                    ease: 'easeInOut',
-                  }}
                   className="project-img"
                   style={{
                     position: 'absolute',
@@ -195,6 +176,7 @@ const ProjectCard = ({ project }) => {
                     objectFit: 'contain'
                   }}
                 />
+                </motion.div>
               )}
             </AnimatePresence>
           </Box>
