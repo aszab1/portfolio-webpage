@@ -94,14 +94,24 @@ const ProjectCard = ({ project }) => {
     return () => clearInterval(timer)
   }, [project.images.length])
 
+
   useEffect(() => {
-    project.images.forEach((image) => {
-      const img = new Image()
-      img.src = image;
-    });
+    const preloadImages = project.images.map((image) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image()
+        img.src = image
+        img.onload = resolve
+        img.onerror = reject
+      })
+    })
+
+    Promise.all(preloadImages).then(() => {
+      console.log("All images preloaded")
+    }).catch((error) => console.error("Error preloading images", error))
   }, [project.images])
 
   const [isImageLoaded, setIsImageLoaded] = useState(false)
+
 
   useEffect(() => {
     const img = new Image()
@@ -110,6 +120,7 @@ const ProjectCard = ({ project }) => {
     img.onerror = () => setIsImageLoaded(false)
   }, [currentImageIndex, project.images])
 
+  
   return (
     <Card className='project-card'
       direction={{ base: 'column', md: 'row' }}
