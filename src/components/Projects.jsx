@@ -79,27 +79,36 @@ const SkillIcon = ({ skill }) => {
       return <FontAwesomeIcon icon={faGithub} className='github' />
     default:
       console.error(`Icon not defined for skill: ${skill}`)
-      return null;
+      return null
   }
 }
 
 
 const ProjectCard = ({ project }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [project.images.length]);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [project.images.length])
 
   useEffect(() => {
     project.images.forEach((image) => {
-      const img = new Image();
-      img.src = image; 
+      const img = new Image()
+      img.src = image;
     });
   }, [project.images])
+
+  const [isImageLoaded, setIsImageLoaded] = useState(false)
+
+  useEffect(() => {
+    const img = new Image()
+    img.src = project.images[currentImageIndex]
+    img.onload = () => setIsImageLoaded(true)
+    img.onerror = () => setIsImageLoaded(false)
+  }, [currentImageIndex, project.images])
 
   return (
     <Card className='project-card'
@@ -152,47 +161,50 @@ const ProjectCard = ({ project }) => {
             overflow="hidden"
           >
             <AnimatePresence mode='wait'>
-              <MotionImage
-                key={currentImageIndex}
-                src={project.images[currentImageIndex]}
-                alt={project.title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{
-                  duration: 1.5, 
-                  ease: 'easeInOut', 
-                }}
-                className="project-img"
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'contain'
-                }}
-              />
+              {isImageLoaded && (
+                <MotionImage
+                  layout
+                  key={currentImageIndex}
+                  src={project.images[currentImageIndex]}
+                  alt={project.title}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{
+                    duration: 1.5,
+                    ease: 'easeInOut',
+                  }}
+                  className="project-img"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain'
+                  }}
+                />
+              )}
             </AnimatePresence>
           </Box>
         </CardBody>
       </Stack>
 
     </Card>
-  );
+  )
 }
 
 const ProjectCarousel = ({ projects }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
   const nextProject = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
-  };
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length)
+  }
 
   const prevProject = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
-  };
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length)
+  }
 
   const handlers = useSwipeable({
     onSwipedLeft: nextProject,
@@ -200,7 +212,7 @@ const ProjectCarousel = ({ projects }) => {
     preventDefaultTouchmoveEvent: true,
     trackMouse: false,
     trackTouch: true,
-  });
+  })
 
   return (
     <Box className="carousel" ref={ref} {...handlers}>
@@ -221,7 +233,7 @@ const ProjectCarousel = ({ projects }) => {
         display="flex"
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentIndex * 100}%)`} // Ensure only one project is shown
-        width="100%" // Carousel width is always 100% of the container
+        width="100%" 
       >
         {projects.map((project, index) => (
           <Box
@@ -248,7 +260,7 @@ const ProjectCarousel = ({ projects }) => {
 
       />
     </Box>
-  );
+  )
 }
 
 
