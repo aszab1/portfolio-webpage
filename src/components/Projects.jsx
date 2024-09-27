@@ -7,6 +7,7 @@ import { faPython, faReact, faJs, faSass, faBootstrap, faGithub } from '@fortawe
 import { faUpRightFromSquare, faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { useSwipeable } from 'react-swipeable'
 
+
 // Import project images
 import travelistik1 from '../assets/images/travelistik1.jpg'
 import travelistik2 from '../assets/images/travelistik2.jpg'
@@ -156,26 +157,26 @@ const ProjectCard = ({ project }) => {
             <AnimatePresence mode='wait'>
               {isImageLoaded && (
                 <motion.div
-                key={currentImageIndex}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.5, ease: 'easeInOut' }}
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-              >
-                <img
-                  src={project.images[currentImageIndex]}
-                  alt={project.title}
-                  className="project-img"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'contain'
-                  }}
-                />
+                  key={currentImageIndex}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1.5, ease: 'easeInOut' }}
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                >
+                  <img
+                    src={project.images[currentImageIndex]}
+                    alt={project.title}
+                    className="project-img"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain'
+                    }}
+                  />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -226,7 +227,7 @@ const ProjectCarousel = ({ projects }) => {
         display="flex"
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentIndex * 100}%)`} // Ensure only one project is shown
-        width="100%" 
+        width="100%"
       >
         {projects.map((project, index) => (
           <Box
@@ -332,9 +333,10 @@ export default function Projects() {
 
   return (
     <>
-      <div id="projects"></div>
+    <div style={{ width: "90%", height: "1px", backgroundColor: "#6D2E46", margin: "0 auto"}}></div>
+
       <div>
-        <h1 className="project-text">Projects</h1>
+        <h2 className="project-text">Past Projects</h2>
         <p className="p-project-text">
           The following projects were key deliverables from the General Assembly Software Engineer Bootcamp,
           a twelve-week intensive course preparing students for tech careers.

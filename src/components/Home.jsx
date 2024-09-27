@@ -18,7 +18,7 @@ export default function Home() {
         <CardBody className='home-cardBody'>
         
         <Heading className='heading-text' size='md'>Hello!</Heading>
-        <Text className='home-text'>I&apos;m Adrienn, a Junior Software Engineer based in London.</Text>
+        <Text className='home-text'>I&apos;m Adrienn, a Software Engineer based in London.</Text>
         </CardBody>
         </Stack>
       </Card>

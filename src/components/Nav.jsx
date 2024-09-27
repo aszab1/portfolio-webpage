@@ -28,7 +28,7 @@ export default function NavBar() {
 
   useEffect(() => {
     if (location.pathname === '/' && scrollToProjects) {
-      const section = document.getElementById('projects')
+      const section = document.getElementById('work')
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' })
         setScrollToProjects(false)
@@ -40,16 +40,16 @@ export default function NavBar() {
     window.scrollTo(0, 0)
   }
 
-  const handleProjectClick = () => {
+  const handleWorkClick = () => {
     if (location.pathname !== '/') {
       setScrollToProjects(true)
       navigate('/')
     } else {
-      scrollToSection('projects')
+      scrollToSection('work')
     }
   }
   const scrollToSection = (sectionId) => {
-    if (sectionId === 'projects') {
+    if (sectionId === 'work') {
       const section = document.getElementById(sectionId)
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' })
@@ -70,14 +70,14 @@ export default function NavBar() {
         <Menu>
           <MenuButton as={IconButton} aria-label='Options' icon={<HamburgerIcon />} />
           <MenuList className='menu-list'>
-            <MenuItem className='projects-menu' onClick={handleProjectClick}>Projects</MenuItem>
+            <MenuItem className='projects-menu' onClick={handleWorkClick}>Work</MenuItem>
             <MenuItem className='menus' as={Link} to='/about' onClick={scrollToTop}>About</MenuItem>
             <MenuItem className='menus' as={Link} to='/contact' onClick={scrollToTop}>Contact</MenuItem>
           </MenuList>
         </Menu>
       ) : (
           <Nav className='nav-links'>
-            <Nav.Link onClick={handleProjectClick}>Projects</Nav.Link>
+            <Nav.Link onClick={handleWorkClick}>Work</Nav.Link>
             <Nav.Link as={Link} to='/about' onClick={scrollToTop}>About</Nav.Link>
             <Nav.Link className='contact-link' as={Link} to='/contact' onClick={scrollToTop}>Contact</Nav.Link>
           </Nav>

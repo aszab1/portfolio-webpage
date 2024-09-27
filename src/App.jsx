@@ -2,7 +2,7 @@ import './App.css'
 import NavBar from './components/Nav'
 import Home from './components/Home'
 import { Outlet, useLocation } from 'react-router-dom'
-import Projects from './components/Projects'
+import Work from './components/Work'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -16,7 +16,7 @@ function App() {
         <NavBar />
         <main>
           {location.pathname === '/' && <Home />}
-          {location.pathname === '/' && <Projects />}
+          {location.pathname === '/' && <Work />}
           <Outlet />
         <Footer />
         </main>

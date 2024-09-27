@@ -1,0 +1,445 @@
+h2.work-text {
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.work-card {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8em;
+  margin-bottom: 6em;
+  align-items: center;
+  
+}
+
+.work-stack {
+  width: 50%;
+  margin: 0 2em 1em 0;
+  justify-content: center;
+}
+
+.work-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.work-text {
+  padding: 3em;
+  text-align: justify;
+}
+
+.work-footer {
+  margin: 0 auto;
+}
+
+.work-away-page,
+.work-project-gh {
+  font-size: 22px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.work-away-page:hover,
+.work-project-gh:hover {
+  color: #6D2E46;
+  transform: scale(1.1);
+}
+
+
+.mousecastle-container {
+  width: 60%;
+  height: 400px;
+  margin: 2em;
+}
+
+.img.project-img{
+  width: 50%;
+  height: 400px;
+}
+
+.mousecastle-container {
+  width: 50%;
+  height: 400px;
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.work-a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.work-a:hover {
+  color: #6D2E46;
+  font-weight: bold;
+}
+
+.poseidon-card {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  align-items: center;
+}
+
+.mobile-animation {
+  position: relative;
+  left: -100px;
+  z-index: 1;
+}
+
+.poseidon-stack {
+  width: 70%;
+  margin: 0 2em 1em 0;
+  justify-content: center;
+}
+
+.poseidon-mobile-container {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.poseidon {
+  width: 60%;
+  height: auto;
+  margin: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.mobile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile-frame {
+  position: relative;
+  width: 259px;
+  height: 480px;
+  border: 10px solid black;
+  border-radius: 26px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #f1f1f1;
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-60%);
+  width: 90px;
+  height: 20px;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 2;
+}
+
+.screen {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 268px;
+  height: 400px;
+  overflow: hidden;
+
+}
+
+.screen video {
+  width: 100%;
+  height: auto;
+  max-width: 89%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  border-radius: 23px;
+}
+
+.status-bar .time {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.status-icons {
+  display: flex;
+  align-items: center;
+}
+
+.network {
+  height: 13px;
+  padding-right: 5px;
+  margin-bottom: 2px;
+}
+
+.wifi {
+  width: 15px;
+  padding-top: 1px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.safari-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 25px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 5px;
+  margin-left: 1.2em;
+  margin-bottom: px;
+
+}
+
+span.url {
+  font-size: 12px;
+}
+
+.screen video{
+  max-width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+  .work-card,
+  .poseidon-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .poseidon-stack {
+    gap: 0.1em;
+  }
+
+  .work-text {
+    width: 100%;
+    padding: 0 0 0 20px;
+  }
+
+  .poseidon {
+    margin: 0 0 0 40px;
+  }
+
+  .mobile-animation {
+    position: relative;
+    left: -40px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+
+  .poseidon-card,
+  .work-card {
+    flex-direction: column-reverse;
+  }
+
+  .poseidon-card {
+    height: auto;
+  }
+
+  .mousecastle-container {
+    width: 50%;
+  }
+
+  .work-text {
+    padding: 0;
+  }
+
+  .work-stack,
+  .poseidon-stack {
+    width: 80%;
+  }
+
+  .poseidon-mobile-container {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .mobile-animation {
+    left: -10px;
+  }
+
+  .poseidon {
+    width: 55%;
+  }
+
+
+  .mobile-frame {
+    position: relative;
+    width: 199px;
+    height: 380px;
+  }
+
+  .screen {
+    left: 0;
+    width: 190px;
+    height: 300px;
+  }
+
+  .screen video {
+    max-width: 94%;
+  }
+
+  .notch {
+    transform: translateX(-55%);
+    width: 65px;
+    height: 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .status-bar {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+
+  .status-bar .time {
+    font-size: 11px;
+  }
+
+  span.url {
+    font-size: 9px;
+  }
+
+  div.mousecastle-container {
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .work-card{
+    margin-top: 3em;
+  }
+  div.mousecastle-container {
+    width: 60%;
+    margin: 0;
+    height: 300px;
+    margin-bottom: 0;
+  }
+  h2.work-heading{
+    font-size: 17px;
+  }
+
+  .work-stack,
+  .poseidon-stack {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .poseidon-mobile-container {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .mobile-animation {
+    left: -30px;
+  }
+
+  .poseidon {
+    width: 60%;
+  }
+  .mobile-animation, .mobile-container{
+    height: 200px;
+  }
+
+  .mobile-frame {
+    width: 140px;
+    height: 280px;
+    border: 6px solid black;
+  border-radius: 26px;
+  }
+
+  .screen {
+    top: 24px;
+    left: 0;
+    width: 250px;
+    height: 215px;
+  }
+
+  .screen video {
+    max-width: 51%;
+  }
+
+  .notch {
+    transform: translateX(-55%);
+    width: 60px;
+    height: 13px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .status-bar {
+    padding: 8px 5px;
+    font-size: 13px;
+  }
+  div.status-icons{
+    margin-left: 10px;
+  }
+  .wifi{
+    margin: 0;
+  }
+  .network{
+    padding: 0;
+    height: 7px;
+  }
+
+  .status-bar .time {
+    font-size: 9px;
+  }
+.safari-bar{
+  margin-left: 13px;
+  margin-bottom: 5px;
+}
+  span.url {
+    font-size: 7px;
+  }
+
+  div.mousecastle-container {
+    margin: 0 auto;
+    height: 250px;
+  }
+
+  h2.work-heading{
+    margin-top: 0.5em;
+  }
+
+}
