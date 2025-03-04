@@ -75,13 +75,6 @@ h2.work-text {
   object-fit: contain;
 }
 
-.work-a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-
 .work-a:hover {
   color: #6D2E46;
   font-weight: bold;
@@ -364,6 +357,7 @@ span.url {
   }
   h2.work-heading{
     font-size: 17px;
+    margin-top: 2em;
   }
 
   .work-stack,
@@ -442,9 +436,4 @@ span.url {
     margin: 0 auto;
     height: 250px;
   }
-
-  h2.work-heading{
-    margin-top: 0.5em;
-  }
-
 }
