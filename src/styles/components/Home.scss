@@ -1,21 +1,23 @@
 .home-img {
   width: 50%;
   border-radius: 155px;
-  margin: 70px 20px 20px 10px;
+  margin: 170px 20px 20px 10px;
 }
 
 .home-card {
-  margin: 6em; 
+  margin-left: 7em;
 }
 
 .home-div {
-  height: 500px;
+  height: 600px;
   background-color: #6D2E46;
 }
 .home-cardBody {
   color:  rgb(222, 215, 209);
+  margin-right: -1px;
 }
 .stack-text {
+  margin-top: 100px;
   text-align: center;
   align-content: center;
     flex-wrap: wrap;
@@ -23,49 +25,70 @@
     align-items: center; 
 }
 
-
+@media only screen and (max-width: 1300px) {
+  .home-card {
+    margin-left: 3em;
+  }
+  .css-su8rbt{
+    width: 50%;
+  }
+  .home-div {
+    height: 550px;
+  }
+}
 
 @media only screen and (max-width: 1060px) {
   .home-div {
-    height: 400px;
+    height: 500px;
+  }
+  .home-img {
+    width: 55%;
+  }
+  .home-card{
+    margin-left: auto;
   }
 }
 
-@media only screen and (max-width: 1060px) {
-  .home-img {
-    width: 60%;
-  }
-}
 
 @media only screen and (max-width: 768px) {
+  .home-card {
+    margin-left: auto;
+  }
   .home-img {
-    width: 65%;
+    width: 60%;
+    
   }
   .home-div {
-    height: 350px;
+    height: 450px;
+  }
+  .stack-text{
+    margin-top: 10em;
+    font-size: medium;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .home-card{
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .home-img {
-    width: 60%;
-    margin: 20px;
+    width: 70%;
+    margin: 1em;
   }
   .home-div {
-    height: 400px;
+    height: 450px;
   }
 
   .stack-text{
-    margin-top: 4em;
+    margin-top: 8em;
+    font-size: 15px;
+    padding: 0 5em;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .home-img {
-    width: 70%;
+  .heading-text{
+    padding-top: 1em;
+    font-size: 22px;
   }
 }
 

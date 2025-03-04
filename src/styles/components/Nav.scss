@@ -26,10 +26,12 @@ a.contact-link {
 }
 
 .menu-list {
-  background-color: #d2caca;
+  background-color: rgb(232, 222, 214);
   width: 150px;
   padding: 5px;
   cursor: pointer;
+  padding-left: 20px;
+
 }
 
 .menus:hover{
@@ -39,7 +41,7 @@ a.contact-link {
 }
 
 .projects-menu{
-  background-color: #d2caca;
+  background-color: rgb(232, 222, 214);
   padding: 0;
   border: none;
 }
@@ -52,7 +54,8 @@ a.contact-link {
 
 .menus {
   margin-top: 10px;
-  background-color: #d2caca;
+  background-color: rgb(232, 222, 214);
+ 
 }
 
 .chakra-button.chakra-menu__menu-button.css-p7mkev{
@@ -74,12 +77,6 @@ a.contact-link {
 @media only screen and (max-width: 768px) {
   a.nav-link {
     margin: 20px 0 10px 10px;
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  a.nav-link {
-  font-size: 16px;
+    font-size: 16px;
   }
 }

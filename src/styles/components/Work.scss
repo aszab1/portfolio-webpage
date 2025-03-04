@@ -298,6 +298,7 @@ span.url {
 
   .poseidon {
     width: 55%;
+    margin-left: 6em;
   }
 
 
@@ -344,7 +345,14 @@ span.url {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
+  .mobile-animation {
+    left: -90px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
   .work-card{
     margin-top: 3em;
   }
@@ -370,12 +378,9 @@ span.url {
     margin: 0 auto;
   }
 
-  .mobile-animation {
-    left: -30px;
-  }
-
   .poseidon {
-    width: 60%;
+    width: 70%;
+    margin-left: 2.5em;
   }
   .mobile-animation, .mobile-container{
     height: 200px;
