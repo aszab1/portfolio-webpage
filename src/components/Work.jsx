@@ -112,7 +112,7 @@ export default function Work() {
             <Heading className='work-heading' size='md'>Client: Royal Palace of Gödöllő</Heading>
 
             <Text className='work-text' py='2'>
-              A React app built in collaboration with two software engineers, created for children visiting the museum. The app guides them through a series of questions, which they must answer to solve the password. It is available in three languages—Hungarian, English, and German.
+              A React app built in collaboration with two software engineers, created for children visiting the museum. The app guides them through a series of questions, which they must answer to solve the password. It is available in three languages - Hungarian, English, and German.
             </Text>
           </CardBody>
 
